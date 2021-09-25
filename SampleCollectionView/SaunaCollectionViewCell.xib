@@ -4,22 +4,49 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="gTV-IL-0wX" customClass="SaunaCollectionViewCell" customModule="SampleCollectionView" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <rect key="frame" x="0.0" y="0.0" width="270" height="264"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <rect key="frame" x="0.0" y="0.0" width="270" height="264"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fo8-av-bxx">
-                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <rect key="frame" x="0.0" y="0.0" width="270" height="264"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sauna" translatesAutoresizingMaskIntoConstraints="NO" id="gZb-79-fwD">
+                                <rect key="frame" x="0.0" y="0.0" width="270" height="158.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="サウナの名前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kMv-8Y-wal">
+                                <rect key="frame" x="8" y="166.5" width="104" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pmt-MT-FMg">
+                                <rect key="frame" x="8" y="187.5" width="46" height="30"/>
+                                <state key="normal" title="東京都"/>
+                                <connections>
+                                    <action selector="didTapLocationButton:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Hu3-KF-Osw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pmt-MT-FMg" firstAttribute="top" secondItem="kMv-8Y-wal" secondAttribute="bottom" id="1Lo-oN-gZ1"/>
+                            <constraint firstAttribute="trailing" secondItem="gZb-79-fwD" secondAttribute="trailing" id="5xL-Tj-iYO"/>
+                            <constraint firstItem="pmt-MT-FMg" firstAttribute="leading" secondItem="kMv-8Y-wal" secondAttribute="leading" id="H5M-Fa-uQi"/>
+                            <constraint firstItem="kMv-8Y-wal" firstAttribute="top" secondItem="gZb-79-fwD" secondAttribute="bottom" constant="8" id="SOP-2w-gio"/>
+                            <constraint firstItem="gZb-79-fwD" firstAttribute="height" secondItem="Fo8-av-bxx" secondAttribute="height" multiplier="0.6" id="UGO-dY-vAj"/>
+                            <constraint firstItem="gZb-79-fwD" firstAttribute="leading" secondItem="Fo8-av-bxx" secondAttribute="leading" id="UjN-Bw-Y6u"/>
+                            <constraint firstItem="gZb-79-fwD" firstAttribute="top" secondItem="Fo8-av-bxx" secondAttribute="top" id="dLc-Rd-DhT"/>
+                            <constraint firstItem="kMv-8Y-wal" firstAttribute="leading" secondItem="Fo8-av-bxx" secondAttribute="leading" constant="8" id="rHN-eQ-efN"/>
+                        </constraints>
                     </view>
                 </subviews>
             </view>
@@ -30,12 +57,17 @@
                 <constraint firstAttribute="trailing" secondItem="Fo8-av-bxx" secondAttribute="trailing" id="arI-DH-fGL"/>
                 <constraint firstItem="Fo8-av-bxx" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="nFy-Mf-3MQ"/>
             </constraints>
-            <point key="canvasLocation" x="-36" y="100"/>
+            <size key="customSize" width="270" height="264"/>
+            <connections>
+                <outlet property="baseView" destination="Fo8-av-bxx" id="oW5-2o-3ZD"/>
+                <outlet property="locationButton" destination="pmt-MT-FMg" id="b3c-Ex-HsD"/>
+                <outlet property="saunaImageView" destination="gZb-79-fwD" id="BGv-bl-vLe"/>
+                <outlet property="saunaNameLabel" destination="kMv-8Y-wal" id="uJB-Dy-5tx"/>
+            </connections>
+            <point key="canvasLocation" x="123.18840579710145" y="171.42857142857142"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
+        <image name="sauna" width="960" height="640"/>
     </resources>
 </document>

@@ -8,9 +8,30 @@
 import UIKit
 
 final class SaunaCollectionViewCell: UICollectionViewCell {
+    
+    @IBOutlet private weak var baseView: UIView!
+    @IBOutlet private weak var saunaImageView: UIImageView!
+    @IBOutlet private weak var saunaNameLabel: UILabel!
+    @IBOutlet private weak var locationButton: UIButton!
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        setupLayer()
+    }
+    
+    @IBAction private func didTapLocationButton(_ sender: UIButton) {
+        
+    }
+    
+    private func setupLayer() {
+        baseView.layer.borderWidth = 1.0
+        baseView.layer.borderColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)
+        baseView.layer.cornerRadius = 8.0
+        baseView.clipsToBounds = true
+    }
+    
+    func setupText(saunaName: String) {
+        saunaNameLabel.text = saunaName
     }
     
     func setupCollectionViewLayout(collectionView: UICollectionView) {
