@@ -17,6 +17,8 @@
 		C55184CF26F71FF10076B446 /* SampleCollectionViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55184CE26F71FF10076B446 /* SampleCollectionViewUITests.swift */; };
 		C5B2533926FEEA2800CB08F1 /* SaunaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B2533726FEEA2800CB08F1 /* SaunaCollectionViewCell.swift */; };
 		C5B2533A26FEEA2800CB08F1 /* SaunaCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5B2533826FEEA2800CB08F1 /* SaunaCollectionViewCell.xib */; };
+		C5B2535F27002CDA00CB08F1 /* CellTapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B2535E27002CDA00CB08F1 /* CellTapViewController.swift */; };
+		C5B2536427002CFD00CB08F1 /* CellTapViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5B2536327002CFD00CB08F1 /* CellTapViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		C55184D026F71FF10076B446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5B2533726FEEA2800CB08F1 /* SaunaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaunaCollectionViewCell.swift; sourceTree = "<group>"; };
 		C5B2533826FEEA2800CB08F1 /* SaunaCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SaunaCollectionViewCell.xib; sourceTree = "<group>"; };
+		C5B2535E27002CDA00CB08F1 /* CellTapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellTapViewController.swift; sourceTree = "<group>"; };
+		C5B2536327002CFD00CB08F1 /* CellTapViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CellTapViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,8 @@
 				C55184BA26F71FF10076B446 /* Info.plist */,
 				C5B2533726FEEA2800CB08F1 /* SaunaCollectionViewCell.swift */,
 				C5B2533826FEEA2800CB08F1 /* SaunaCollectionViewCell.xib */,
+				C5B2535E27002CDA00CB08F1 /* CellTapViewController.swift */,
+				C5B2536327002CFD00CB08F1 /* CellTapViewController.storyboard */,
 			);
 			path = SampleCollectionView;
 			sourceTree = "<group>";
@@ -241,6 +247,7 @@
 				C55184B626F71FF10076B446 /* Assets.xcassets in Resources */,
 				C55184B426F71FF00076B446 /* Main.storyboard in Resources */,
 				C5B2533A26FEEA2800CB08F1 /* SaunaCollectionViewCell.xib in Resources */,
+				C5B2536427002CFD00CB08F1 /* CellTapViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +275,7 @@
 				C55184B126F71FF00076B446 /* SaunaViewController.swift in Sources */,
 				C55184AD26F71FF00076B446 /* AppDelegate.swift in Sources */,
 				C55184AF26F71FF00076B446 /* SceneDelegate.swift in Sources */,
+				C5B2535F27002CDA00CB08F1 /* CellTapViewController.swift in Sources */,
 				C5B2533926FEEA2800CB08F1 /* SaunaCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

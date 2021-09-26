@@ -22,14 +22,14 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sauna" translatesAutoresizingMaskIntoConstraints="NO" id="gZb-79-fwD">
                                 <rect key="frame" x="0.0" y="0.0" width="270" height="158.5"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="サウナの名前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kMv-8Y-wal">
-                                <rect key="frame" x="8" y="166.5" width="104" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="サウナの名前" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kMv-8Y-wal">
+                                <rect key="frame" x="8" y="166.5" width="254" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pmt-MT-FMg">
-                                <rect key="frame" x="8" y="187.5" width="46" height="30"/>
+                                <rect key="frame" x="8" y="186" width="46" height="30"/>
                                 <state key="normal" title="東京都"/>
                                 <connections>
                                     <action selector="didTapLocationButton:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Hu3-KF-Osw"/>
@@ -39,6 +39,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="pmt-MT-FMg" firstAttribute="top" secondItem="kMv-8Y-wal" secondAttribute="bottom" id="1Lo-oN-gZ1"/>
+                            <constraint firstAttribute="trailing" secondItem="kMv-8Y-wal" secondAttribute="trailing" constant="8" id="23j-U2-9va"/>
                             <constraint firstAttribute="trailing" secondItem="gZb-79-fwD" secondAttribute="trailing" id="5xL-Tj-iYO"/>
                             <constraint firstItem="pmt-MT-FMg" firstAttribute="leading" secondItem="kMv-8Y-wal" secondAttribute="leading" id="H5M-Fa-uQi"/>
                             <constraint firstItem="kMv-8Y-wal" firstAttribute="top" secondItem="gZb-79-fwD" secondAttribute="bottom" constant="8" id="SOP-2w-gio"/>
