@@ -48,6 +48,13 @@ extension SaunaViewController: UICollectionViewDataSource {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as? SaunaCollectionViewCell else { return UICollectionViewCell() }
         let saunaName = saunaNameList[indexPath.row]
         cell.setupText(saunaName: saunaName)
+        
+        cell.locationBlock = {
+            let storyboard = UIStoryboard(name: "ButtonTapViewController", bundle: nil)
+            let vc = storyboard.instantiateViewController(identifier: "ButtonTapViewController")
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        
         return cell
     }
 }

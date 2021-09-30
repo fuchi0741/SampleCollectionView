@@ -9,6 +9,8 @@ import UIKit
 
 final class SaunaCollectionViewCell: UICollectionViewCell {
     
+    var locationBlock: (() -> Void)?
+        
     @IBOutlet private weak var baseView: UIView!
     @IBOutlet private weak var saunaImageView: UIImageView!
     @IBOutlet private weak var saunaNameLabel: UILabel!
@@ -20,7 +22,7 @@ final class SaunaCollectionViewCell: UICollectionViewCell {
     }
     
     @IBAction private func didTapLocationButton(_ sender: UIButton) {
-        
+        locationBlock?()
     }
     
     private func setupLayer() {
