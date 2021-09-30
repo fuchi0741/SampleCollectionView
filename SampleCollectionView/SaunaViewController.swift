@@ -49,7 +49,9 @@ extension SaunaViewController: UICollectionViewDataSource {
         let saunaName = saunaNameList[indexPath.row]
         cell.setupText(saunaName: saunaName)
         
-        cell.locationBlock = {
+        cell.locationBlock = { [weak self] in
+            guard let self = self else { return }
+
             let storyboard = UIStoryboard(name: "ButtonTapViewController", bundle: nil)
             let vc = storyboard.instantiateViewController(identifier: "ButtonTapViewController")
             self.navigationController?.pushViewController(vc, animated: true)
