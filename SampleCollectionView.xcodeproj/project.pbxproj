@@ -21,6 +21,7 @@
 		C5B2536427002CFD00CB08F1 /* CellTapViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5B2536327002CFD00CB08F1 /* CellTapViewController.storyboard */; };
 		C5B253A12706435F00CB08F1 /* ButtonTapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B253A02706435F00CB08F1 /* ButtonTapViewController.swift */; };
 		C5B253A62706438100CB08F1 /* ButtonTapViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5B253A52706438100CB08F1 /* ButtonTapViewController.storyboard */; };
+		C5B253AE27065BC900CB08F1 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B253AD27065BC900CB08F1 /* UIViewController+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		C5B2536327002CFD00CB08F1 /* CellTapViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CellTapViewController.storyboard; sourceTree = "<group>"; };
 		C5B253A02706435F00CB08F1 /* ButtonTapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTapViewController.swift; sourceTree = "<group>"; };
 		C5B253A52706438100CB08F1 /* ButtonTapViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ButtonTapViewController.storyboard; sourceTree = "<group>"; };
+		C5B253AD27065BC900CB08F1 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				C5B2536327002CFD00CB08F1 /* CellTapViewController.storyboard */,
 				C5B253A02706435F00CB08F1 /* ButtonTapViewController.swift */,
 				C5B253A52706438100CB08F1 /* ButtonTapViewController.storyboard */,
+				C5B253AD27065BC900CB08F1 /* UIViewController+.swift */,
 			);
 			path = SampleCollectionView;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5B253AE27065BC900CB08F1 /* UIViewController+.swift in Sources */,
 				C55184B126F71FF00076B446 /* SaunaViewController.swift in Sources */,
 				C55184AD26F71FF00076B446 /* AppDelegate.swift in Sources */,
 				C55184AF26F71FF00076B446 /* SceneDelegate.swift in Sources */,

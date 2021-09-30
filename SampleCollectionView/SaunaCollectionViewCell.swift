@@ -40,7 +40,7 @@ final class SaunaCollectionViewCell: UICollectionViewCell {
         let layout = UICollectionViewFlowLayout()
         let numberOfColumn: CGFloat = 2
         let margin: CGFloat = 8
-        let space: CGFloat = margin * numberOfColumn - margin / numberOfColumn
+        let space = margin * numberOfColumn - margin / numberOfColumn
         
         let cellSize = UIScreen.main.bounds.width / numberOfColumn - space
         

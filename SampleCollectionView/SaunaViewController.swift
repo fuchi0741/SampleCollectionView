@@ -51,10 +51,7 @@ extension SaunaViewController: UICollectionViewDataSource {
         
         cell.locationBlock = { [weak self] in
             guard let self = self else { return }
-
-            let storyboard = UIStoryboard(name: "ButtonTapViewController", bundle: nil)
-            let vc = storyboard.instantiateViewController(identifier: "ButtonTapViewController")
-            self.navigationController?.pushViewController(vc, animated: true)
+            self.transition(viewControllerName: "ButtonTapViewController")
         }
         
         return cell
@@ -63,8 +60,6 @@ extension SaunaViewController: UICollectionViewDataSource {
 
 extension SaunaViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let storyboard = UIStoryboard(name: "CellTapViewController", bundle: nil)
-        let vc = storyboard.instantiateViewController(identifier: "CellTapViewController")
-        navigationController?.pushViewController(vc, animated: true)
+        transition(viewControllerName: "CellTapViewController")
     }
 }
